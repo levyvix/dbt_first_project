@@ -1,0 +1,12 @@
+first_proejct:
+  outputs:
+    dev:
+      dbname: database
+      host: localhost
+      pass: "{{ env_var('DBT_PASSWORD') }}"
+      port: 5432
+      schema: public
+      threads: 3
+      type: postgres
+      user: admin
+  target: dev
